@@ -17,7 +17,7 @@
                 <p>1</p>
             </td>
             <td>
-                <a href = "#">Fibonacci Series (Brute Force)</p>
+                <a href = "https://github.com/SaiEswar15/Dynamic-Programming-DataStructures/blob/main/01FibonacciSeriesBruteForce.js">Fibonacci Series (Brute Force)</p>
             </td>
             <td>
                 <p>0(N)</p>
@@ -31,7 +31,7 @@
                 <p>2</p>
             </td>
             <td>
-                <a href = "#">Fibonacci Series (Recursion)</p>
+                <a href = "https://github.com/SaiEswar15/Dynamic-Programming-DataStructures/blob/main/02FibonacciSeriesRecursion.js">Fibonacci Series (Recursion)</p>
             </td>
             <td>
                 <p>0(N)*0(N)*0(N)</p>
@@ -45,7 +45,7 @@
                 <p>3</p>
             </td>
             <td>
-                <a href = "#">Fibonacci Number (Recursion)</p>
+                <a href = "https://github.com/SaiEswar15/Dynamic-Programming-DataStructures/blob/main/03FibonacciNumberRecursion.js">Fibonacci Number (Recursion)</p>
             </td>
             <td>
                 <p>0(2^N)</p>
@@ -56,10 +56,10 @@
         </tr>
         <tr>
             <td>
-                <p>4</p>
+                <p>4*</p>
             </td>
             <td>
-                <a href = "#">Fibonacci Number (Recursion & Dynamic Programming)</p>
+                <a href = "https://github.com/SaiEswar15/Dynamic-Programming-DataStructures/blob/main/04FibonacciNumberRecursionDP.js">Fibonacci Number (Recursion & Dynamic Programming)</p>
             </td>
             <td>
                 <p>0(N)</p>
