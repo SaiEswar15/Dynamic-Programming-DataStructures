@@ -1,52 +1,31 @@
-//given an array of numbers and a targetsum 
-//write a function such that it says whether any sum of numbers can make the target sum.
-//example : [2,4,6,8,10] target : 14
-//answer : 6,8 can make 14 so true
-////answer : 2,4,8 can make 14 so true
+//Time complexity : the left barnch will go for m times 
+//and agin each node again goes for n times 
+//which makes this the 0(n^m times)
+//space complexity will be m times
 
-function solve(target, arr, flag)
+function canSum(target, arr) //8
 {
-    if(arr.length === 1)
+    if(target === 0) return true;
+    if(target < 0) return  false;
+
+    for(let i of arr)
     {
-        if(arr[0] === target)
+        let remainder = target-i; //8-2=6
+        if(canSum(remainder, arr)===true)
         {
-            flag = true;
-            return arr[0];
-        }
-        else
-        {
-            return arr[0];
+            return true;
         }
     }
-
-    let arr1 = [...arr];
-    let arr2 = [...arr];
-    arr1.shift();
-    arr2.pop();
-    let sum = canSum(target, arr1) + canSum(target, arr2);
-    if(sum === target)
-    {
-        flag = true;
-    }
-    return sum;
+    return false;
 }
 
-function canSum(target, arr)
-{
-    let flag = false;
-    solve(target, arr, flag)
+console.log(canSum(14, [2,4,6,8,10]))
 
-    if(flag)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-    
-}
+// console.log(canSum(300, [7,14]))
 
-console.log(canSum(14, [2,4,6,8,10]));
 
+//the second example takes a lot of time to do because it has to reach from 
+//300 to 0 or 1 which takes a lot of recursion functions so 
+// we have to use some type of memoization 
+//refer to 08.
 
